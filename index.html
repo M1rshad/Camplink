@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare real Vattavada camping, cottage and villa packages, browse property albums and contact stays directly to book.">
+  <meta name="theme-color" content="#10261d">
+  <title>CampLink — Vattavada Camps & Stays</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { pine: '#10261d', moss: '#49624f', cream: '#f3f0e8', sand: '#ddd4c3', ember: '#d88843', ink: '#17201b' },
+          fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Manrope', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cream text-ink antialiased">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="CampLink home">
+        <span class="header-logo" aria-hidden="true">
+          <img class="header-logo__image header-logo__image--white" src="assets/images/camplink_white_logo.png" alt="" width="1022" height="244">
+          <img class="header-logo__image header-logo__image--black" src="assets/images/camplink_black_logo.png" alt="" width="1022" height="244">
+        </span>
+      </a>
+
+      <div class="nav-links" aria-label="Primary">
+        <a href="#destinations">Vattavada stays</a>
+        <a href="#compare">Compare</a>
+        <a href="#trip-notes">Trip notes</a>
+        <a href="#how-it-works">How to book</a>
+      </div>
+
+      <a href="#destinations" class="button button--nav">
+        <span>Explore stays</span>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <span class="eyebrow text-sand">Navigate</span>
+      <a href="#destinations">Vattavada stays <span>01</span></a>
+      <a href="#compare">Compare packages <span>02</span></a>
+      <a href="#trip-notes">Trip notes <span>03</span></a>
+      <a href="#how-it-works">How to book <span>04</span></a>
+      <div class="mobile-menu__foot"><p>Choose a stay. Check your dates.</p></div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section id="home" class="hero" aria-labelledby="hero-title" data-nav-theme="dark">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/images/camplink-hero.png" alt="" width="1823" height="863" fetchpriority="high" data-hero-image>
+      </div>
+      <div class="hero__shade"></div>
+      <div class="hero__content page-shell">
+        <p class="hero__eyebrow reveal-hero"><span></span> Discover <i></i> Compare <i></i> Connect</p>
+        <h1 id="hero-title" class="hero__title" aria-label="Find Your Next Stay in the Wild.">
+          <span class="hero-word">Find</span>
+          <span class="hero-word">Your Next Stay</span>
+          <span class="hero-word hero-word--accent">in the Wild.</span>
+        </h1>
+        <div class="hero__bottom reveal-hero">
+          <p>CampLink brings camps, nature stays and outdoor experiences together in one curated place.</p>
+          <div class="hero__actions">
+            <a href="#destinations" class="button button--light button--hero-explore">
+              <span>Explore stays</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+            </a>
+            <a href="#how-it-works" class="text-link text-link--light">How CampLink works <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue reveal-hero" href="#manifesto" aria-label="Scroll to discover">
+        <span>Scroll to discover</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section id="manifesto" class="camp-intro section-pad" aria-labelledby="intro-title" data-nav-theme="light">
+      <div class="page-shell camp-intro__grid">
+        <div>
+          <p class="camp-label reveal">Vattavada · Kerala</p>
+          <h2 id="intro-title" class="reveal">Real packages. Clear inclusions. Property albums inside.</h2>
+        </div>
+        <div class="camp-intro__copy reveal">
+          <p>Compare nine camping, cottage and private-villa options using the public package details supplied by each property.</p>
+          <dl>
+            <div><dt>9</dt><dd>stay options</dd></div>
+            <div><dt>₹800</dt><dd>starting price</dd></div>
+            <div><dt>173</dt><dd>photos & videos</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="camp-stays section-pad" aria-labelledby="stays-title" data-nav-theme="light">
+      <div class="page-shell">
+        <div class="camp-heading">
+          <div><p class="camp-label">Vattavada packages</p><h2 id="stays-title">Choose how you want to stay.</h2></div>
+          <p>Cards stay focused on price and inclusions. The supplied property media is kept inside each detailed album instead of being stretched across listing thumbnails.</p>
+        </div>
+        <div class="camp-filters" role="group" aria-label="Filter stays by type">
+          <button class="is-active" type="button" data-stay-filter="all">All stays <span>9</span></button>
+          <button type="button" data-stay-filter="camp">Camping</button>
+          <button type="button" data-stay-filter="cottage">Cottages & rooms</button>
+          <button type="button" data-stay-filter="villa">Private villas</button>
+        </div>
+        <div class="camp-grid" data-stay-grid></div>
+        <noscript><p>Please enable JavaScript to view the package list and albums.</p></noscript>
+      </div>
+    </section>
+
+    <section id="compare" class="camp-compare section-pad" aria-labelledby="compare-title" data-nav-theme="dark">
+      <div class="page-shell">
+        <div class="camp-heading camp-heading--light">
+          <div><p class="camp-label">Quick comparison</p><h2 id="compare-title">Start with the facts.</h2></div>
+          <p>These are customer-facing prices from the supplied package details. Reconfirm seasonal rates and availability before paying.</p>
+        </div>
+        <div class="camp-table-wrap">
+          <table class="camp-table">
+            <thead><tr><th>Stay</th><th>Type</th><th>Public price</th><th>Food</th><th>Details</th></tr></thead>
+            <tbody data-compare-body></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="trip-notes" class="camp-notes section-pad" aria-labelledby="notes-title" data-nav-theme="light">
+      <div class="page-shell">
+        <div class="camp-heading">
+          <div><p class="camp-label">Before you leave</p><h2 id="notes-title">Plan for the hills.</h2></div>
+          <p>Access, network, hot water and food arrangements differ between properties. Read the notes on the selected stay before travelling.</p>
+        </div>
+        <div class="camp-notes__grid">
+          <article><span>01</span><h3>Confirm the package</h3><p>Send dates, guest count and the room or tent you prefer. Confirm meals, activities and add-ons in writing.</p></article>
+          <article><span>02</span><h3>Check the approach</h3><p>Some final stretches are rough, walk-in or 4×4-only. Review the property-specific access notes before driving.</p></article>
+          <article><span>03</span><h3>Arrive prepared</h3><p>Carry warm layers, identification and some cash. Jio and BSNL are the most commonly available networks.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="camp-book section-pad" aria-labelledby="book-title" data-nav-theme="dark">
+      <div class="page-shell camp-book__inner">
+        <div><p class="camp-label">How to book</p><h2 id="book-title">Shortlist. Open the album. Check your dates.</h2></div>
+        <ol>
+          <li><span>01</span><p>Choose a stay from the package cards.</p></li>
+          <li><span>02</span><p>Review the full package, important notes and contained media album.</p></li>
+          <li><span>03</span><p>Use the supplied contact to confirm dates and the final amount.</p></li>
+        </ol>
+        <a href="#destinations" class="button button--light">View all Vattavada stays <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" data-nav-theme="dark">
+    <div class="page-shell">
+      <div class="footer__top">
+        <a href="#home" class="brand brand--footer" aria-label="CampLink home"><img class="footer-logo" src="assets/images/camplink_white_logo.png" alt="" width="1022" height="244" loading="lazy"></a>
+        <p>Vattavada stays, compared clearly.</p>
+        <a href="#home" class="back-top">Back to top <span>↑</span></a>
+      </div>
+      <div class="footer__bottom"><p>© 2026 CampLink. All rights reserved.</p><p>Prices and availability require operator confirmation.</p></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" data-whatsapp-float href="https://wa.me/919999999999?text=Hi%20CampLink%2C%20I%20would%20like%20help%20finding%20a%20stay." target="_blank" rel="noopener" aria-label="Chat with CampLink on WhatsApp" title="Chat with CampLink on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.4-4.4A8.4 8.4 0 1 1 20.5 11.7Z"/><path d="M8.2 7.6c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4-.1.6.5 1 1.3 1.8 2.3 2.3.2.1.4.1.6-.1l.8-1c.2-.2.4-.3.7-.2l1.8.9c.3.1.4.3.4.5 0 .4-.2 1.3-.8 1.8-.5.5-1.3.8-2.2.6-1.1-.2-2.5-.8-4.1-2.2-1.3-1.2-2.2-2.6-2.5-3.8-.3-1.1-.1-2 .3-2.6Z"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/stays.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

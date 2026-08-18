@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vattavada stay package details, inclusions, schedule, access notes, property album and direct booking contact.">
+  <meta name="theme-color" content="#10261d">
+  <title>Vattavada Stay Details | CampLink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-page">
+  <a class="skip-link" href="#detail-content">Skip to details</a>
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a href="index.html" class="brand" aria-label="CampLink home">
+        <span class="header-logo" aria-hidden="true">
+          <img class="header-logo__image header-logo__image--white" src="assets/images/camplink_white_logo.png" alt="" width="1022" height="244">
+          <img class="header-logo__image header-logo__image--black" src="assets/images/camplink_black_logo.png" alt="" width="1022" height="244">
+        </span>
+      </a>
+      <div class="nav-links"><a href="index.html#destinations">All stays</a><a href="#packages">Packages</a><a href="#album">Album</a></div>
+      <a href="#booking" class="button button--nav"><span>Check availability</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </nav>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true"><div class="mobile-menu__inner"><a href="index.html#destinations">All stays</a><a href="#packages">Packages</a><a href="#album">Album</a><a href="#booking">Contact</a></div></div>
+
+  <main id="detail-content" class="detail-main">
+    <section class="detail-hero" aria-labelledby="detail-title">
+      <div class="page-shell detail-hero__inner">
+        <div>
+          <nav class="detail-breadcrumbs" aria-label="Breadcrumb"><a href="index.html#destinations">Vattavada stays</a> / <span data-breadcrumb-name>Stay details</span></nav>
+          <p class="detail-kicker" data-detail-kicker></p>
+          <h1 id="detail-title" data-stay-name>Stay details</h1>
+          <p class="detail-hero__tagline" data-stay-tagline></p>
+        </div>
+        <aside class="detail-summary">
+          <small>Public price</small><strong data-stay-price></strong>
+          <dl><div><dt>Stay type</dt><dd data-stay-type></dd></div><div><dt>Album</dt><dd data-media-count></dd></div></dl>
+          <a class="button" data-booking-link target="_blank" rel="noopener"><span>Check availability</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <nav class="detail-tabs" aria-label="On this page"><div class="page-shell detail-tabs__inner"><a href="#packages">Packages</a><a href="#details">Inclusions & schedule</a><a href="#album">Property album</a><a href="#booking">Contact</a></div></nav>
+
+    <section id="packages" class="detail-section" aria-labelledby="packages-title"><div class="page-shell">
+      <div class="detail-section__heading"><p>Packages & prices</p><h2 id="packages-title">Choose the right stay option.</h2></div>
+      <div class="detail-packages" data-package-grid></div>
+    </div></section>
+
+    <section id="details" class="detail-section" aria-labelledby="details-title"><div class="page-shell">
+      <div class="detail-section__heading"><p>What to expect</p><h2 id="details-title">The useful details before you book.</h2></div>
+      <div class="detail-layout">
+        <div class="detail-info">
+          <article class="detail-card detail-card--wide"><h3>Included / available</h3><ul class="detail-checks" data-inclusions></ul></article>
+          <article class="detail-card"><h3>Schedule</h3><ol class="detail-timeline" data-schedule></ol></article>
+          <article class="detail-card"><h3>Amenities</h3><ul class="detail-list" data-amenities></ul></article>
+          <article class="detail-card detail-card--wide" data-nearby-card><h3>Nearby</h3><ul class="detail-list" data-nearby></ul></article>
+          <article class="detail-card detail-card--wide"><h3>Important before booking</h3><ul class="detail-list" data-notes></ul></article>
+        </div>
+        <aside id="booking" class="detail-booking"><p class="camp-label">Direct enquiry</p><h3>Check your dates.</h3><p>Send dates, guest count and preferred package. Reconfirm the final price and inclusions before paying.</p><a class="button" data-booking-link target="_blank" rel="noopener"><span>Contact to book</span></a><div class="detail-contact" data-contact-links></div></aside>
+      </div>
+    </div></section>
+
+    <section id="album" class="detail-section detail-album" aria-labelledby="album-title"><div class="page-shell">
+      <div class="detail-section__heading"><p>Property album</p><h2 id="album-title">See the stay from the inside.</h2></div>
+      <p class="album-copy">Photos and walkthrough videos are kept in this contained viewer instead of being stretched into homepage thumbnails. Select an item below to view it.</p>
+      <div class="album-viewer" data-album-viewer></div>
+      <div class="album-toolbar"><p data-media-caption>Loading album…</p><div class="album-controls"><button type="button" data-media-prev aria-label="Previous media">←</button><button type="button" data-media-next aria-label="Next media">→</button></div></div>
+      <div class="album-strip" data-album-strip aria-label="Property media"></div>
+      <a class="detail-brochure" data-brochure-link target="_blank" rel="noopener" hidden>Open property brochure ↗</a>
+    </div></section>
+
+    <section class="detail-section" aria-labelledby="other-title"><div class="page-shell"><div class="detail-section__heading"><p>Keep comparing</p><h2 id="other-title">Other Vattavada options.</h2></div><div class="other-stays" data-other-stays></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="page-shell"><div class="footer__top"><a href="index.html" class="brand brand--footer"><img class="footer-logo" src="assets/images/camplink_white_logo.png" alt="" width="1022" height="244"></a><p>Vattavada stays, compared clearly.</p><a href="index.html#destinations" class="back-top">All stays <span>↑</span></a></div><div class="footer__bottom"><p>© 2026 CampLink.</p><p>Prices and availability require operator confirmation.</p></div></div></footer>
+
+  <a class="whatsapp-float" data-whatsapp-float href="https://wa.me/919999999999?text=Hi%20CampLink%2C%20I%20would%20like%20help%20with%20a%20stay." target="_blank" rel="noopener" aria-label="Chat with CampLink on WhatsApp" title="Chat with CampLink on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.4-4.4A8.4 8.4 0 1 1 20.5 11.7Z"/><path d="M8.2 7.6c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4-.1.6.5 1 1.3 1.8 2.3 2.3.2.1.4.1.6-.1l.8-1c.2-.2.4-.3.7-.2l1.8.9c.3.1.4.3.4.5 0 .4-.2 1.3-.8 1.8-.5.5-1.3.8-2.2.6-1.1-.2-2.5-.8-4.1-2.2-1.3-1.2-2.2-2.6-2.5-3.8-.3-1.1-.1-2 .3-2.6Z"/></svg>
+  </a>
+
+  <script src="js/stays.js"></script>
+  <script src="js/stay-detail.js"></script>
+</body>
+</html>
