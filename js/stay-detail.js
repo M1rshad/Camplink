@@ -21,8 +21,7 @@
   const videos = stay.media.filter(item => item.type === 'video').length;
   setText('[data-media-count]', videos ? `${photos} photos · ${videos} videos` : `${photos} photos`);
 
-  const bookingLabel = stay.contact.type === 'instagram' ? 'Message on Instagram' : 'WhatsApp to book';
-  document.querySelectorAll('[data-booking-link]').forEach(link => { link.href = app.bookingUrl(stay); link.querySelector('span').textContent = bookingLabel; });
+  document.querySelectorAll('[data-booking-link]').forEach(link => { link.href = app.bookingUrl(stay); link.querySelector('span').textContent = 'WhatsApp to book'; });
 
   document.querySelector('[data-package-grid]').innerHTML = stay.packages.map(item => `<article class="detail-package"><h3>${item.name}</h3><div class="detail-package__price">${item.price}</div><p class="detail-package__basis">${item.basis}</p><p class="detail-package__description">${item.description}</p></article>`).join('');
   const renderList = (selector, items) => { document.querySelector(selector).innerHTML = items.map(item => `<li>${item}</li>`).join(''); };
@@ -32,13 +31,12 @@
   renderList('[data-notes]', stay.notes);
   if (stay.nearby?.length) renderList('[data-nearby]', stay.nearby); else document.querySelector('[data-nearby-card]').hidden = true;
 
-  const contactItems = [`<a href="${app.bookingUrl(stay)}" target="_blank" rel="noopener">${stay.contact.label}</a>`];
-  if (stay.secondaryContact) contactItems.push(`<span>Also: ${stay.secondaryContact}</span>`);
-  if (stay.website) contactItems.push(`<a href="${stay.website}" target="_blank" rel="noopener">Property website ↗</a>`);
-  if (stay.maps) contactItems.push(`<a href="${stay.maps}" target="_blank" rel="noopener">Open in Google Maps ↗</a>`);
-  if (stay.email) contactItems.push(`<a href="mailto:${stay.email}">${stay.email}</a>`);
+  const contactItems = [
+    `<a href="${app.bookingUrl(stay)}" target="_blank" rel="noopener">WhatsApp: ${app.contact.phoneLabel}</a>`,
+    `<a href="mailto:${app.contact.email}">${app.contact.email}</a>`,
+    `<a href="${app.contact.instagramUrl}" target="_blank" rel="noopener">Instagram: @${app.contact.instagram}</a>`
+  ];
   document.querySelector('[data-contact-links]').innerHTML = contactItems.join('');
-  if (stay.brochure) { const link = document.querySelector('[data-brochure-link]'); link.href = encodeURI(stay.brochure); link.hidden = false; }
 
   const viewer = document.querySelector('[data-album-viewer]');
   const caption = document.querySelector('[data-media-caption]');
